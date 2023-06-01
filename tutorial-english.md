@@ -1,10 +1,10 @@
 # Game Maker - Coding Challenge
 ```template
 effects.confetti.startScreenEffect()
-function asteroidLogic (Asteroid: Sprite) {
-    Asteroid.setVelocity(0, 75)
-    Asteroid.setPosition(randint(3, 150), 0)
-    Asteroid.setFlag(SpriteFlag.AutoDestroy, true)
+function asteroidLogic (asteroid: Sprite) {
+    asteroid.setVelocity(0, 75)
+    asteroid.setPosition(randint(3, 150), 0)
+    asteroid.setFlag(SpriteFlag.AutoDestroy, true)
 }
 ```
 ## Space ship: Step 1
@@ -310,13 +310,13 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroidLogic(Asteroid)
+	asteroidLogic(asteroid)
 })
 ```
 
 ## Asteroid: Step 5
 Make sure the name on the ``||functions: call function||`` is the same as what you
-have called your Asteroid.
+have called your asteroid.
 ```blocks
 game.onUpdateInterval(500, function () {
     asteroid = sprites.create(img`
@@ -337,7 +337,7 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroidLogic(Asteroid)
+	asteroidLogic(asteroid)
 })
 ```
 

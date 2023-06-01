@@ -275,14 +275,7 @@ game.onUpdateInterval(500, function () {
 ```
 
 ## Asteroide: Steg 4
-Til slutt, vi har lyst til at asteroidene skal bevege seg mot oss. Dette er hvor vi 
-skal ta i bruk den blå blokken fra starten av spillet. Denne inneholder flere kommandoer
-for hva asteroidene skal gjøre.
 
-Nederst blandt menyene er der en knapp som heter ``||Console: Advanced||``. Klikk på denne og 
-en ny undermeny ``||functions: Functions||`` dukker opp. 
-
-Her, finn ``||functions: call asteroideLogikk||`` og legg den til i koden vår.
 
 ```blocks
 game.onUpdateInterval(500, function () {
@@ -304,7 +297,7 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroideLogikk(asteroide)
+	enemy.movement()
 })
 ```
 
@@ -332,7 +325,7 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroideLogikk(asteroide)
+	enemy.movement(asteroide)
 })
 ```
 

@@ -12,7 +12,7 @@
 namespace enemy {
     /**
      * TODO: describe your function here
-     * @param asteroid some Sprite that will do this behavior, eg: mySprite
+     * @param asteroid some Sprite that will do this behavior
      */
     //% block
     export function movement(asteroid: Sprite): void {

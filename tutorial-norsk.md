@@ -1,11 +1,6 @@
 # Spillmaker - Kodeutfordringen
 ```template
 effects.confetti.startScreenEffect()
-function asteroideLogikk (asteroide: Sprite) {
-    asteroide.setVelocity(0, 75)
-    asteroide.setPosition(randint(3, 150), 0)
-    asteroide.setFlag(SpriteFlag.AutoDestroy, true)
-}
 ```
 
 ## Romskip: Steg 1
@@ -15,8 +10,6 @@ som har en ``||scene: start screen confetti effect||`` inne i seg. Dette
 er begynnelsen på hva som skal bli spillet vårt! 
 
 Først, trykk på hvor det står **confetti** og forandre det til **star field**
-
-**NOTIS: Den blå blokken som heter ``||functions: function||`` er noe som skal hjelpe oss senere i spillet. For nå kan du la den stå som den er.**
 
 ```blocks
 effects.starField.startScreenEffect()

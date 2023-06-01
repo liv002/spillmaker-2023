@@ -11,7 +11,8 @@
         "assets.json",
         "tutorial-norsk.md",
         "tutorial-english.md",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "custom.ts"
     ],
     "testFiles": [
         "test.ts"

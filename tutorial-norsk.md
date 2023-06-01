@@ -275,7 +275,9 @@ game.onUpdateInterval(500, function () {
 ```
 
 ## Asteroide: Steg 4
-
+Vi vil at asteroidene skal bevege seg mot oss. For enkelhets skyld har vi laget en enkel blokk for dette.
+I ``||enemy:Enemy||`` menyen, finn ``||enemy:movement||`` blokken. Legg denne inn nederst i 
+``||Game:on game update||`` blokken.
 
 ```blocks
 game.onUpdateInterval(500, function () {
@@ -302,8 +304,8 @@ game.onUpdateInterval(500, function () {
 ```
 
 ## Asteroide: Steg 5
-Sjekk at navnet som står i rødt på ``||enemy: movement||`` blokken er det samme
-som hva asteroiden din heter.
+Vi vil at alle asteroidene skal bevege seg. I ``||variables:Variables||`` menyen, finn en rund blokk
+med samme navn som asteroidene dine. Dra denne inn i det runde tomrommet i ``||enemy:movement||`` blokken.
 
 ```blocks
 game.onUpdateInterval(500, function () {

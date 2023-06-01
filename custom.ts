@@ -35,4 +35,14 @@ namespace custom {
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value -1) + fib(value - 2);
     }
+
+    /**
+     * TODO: describe your function here
+     * @param asteroid some Sprite that will do this behavior
+     */
+    //% block
+    export function logic(asteroid: Sprite) {
+        asteroid.setVelocity(0, 75)
+        asteroid.setPosition(randint(3, 150), 0)
+    }
 }

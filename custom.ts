@@ -8,11 +8,11 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#c381bc icon="f753"
+//% weight=100 color=#c381bc icon="\f753"
 namespace enemy {
     /**
      * TODO: describe your function here
-     * @param asteroid some Sprite that will do this behavior
+     * @param asteroid some Sprite that will do this behavior, eg: asteroid
      */
     //% block
     export function movement(asteroid: Sprite): void {

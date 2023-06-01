@@ -12,7 +12,8 @@
         "tutorial-norsk.md",
         "tutorial-english.md",
         "tutorial-info-cache.json",
-        "custom.ts"
+        "custom.ts",
+        "demo.md"
     ],
     "testFiles": [
         "test.ts"

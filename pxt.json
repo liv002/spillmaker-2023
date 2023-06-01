@@ -8,7 +8,8 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "tutorial-norsk.md"
+        "tutorial-norsk.md",
+        "tutorial-english.md"
     ],
     "testFiles": [
         "test.ts"

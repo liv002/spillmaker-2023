@@ -9,7 +9,8 @@
         "README.md",
         "assets.json",
         "tutorial-norsk.md",
-        "tutorial-english.md"
+        "tutorial-english.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"

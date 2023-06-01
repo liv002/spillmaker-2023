@@ -8,14 +8,14 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#0fbc11 icon=""
-namespace test {
+//% weight=100 color=#c381bc icon="f753"
+namespace enemy {
     /**
      * TODO: describe your function here
      * @param asteroid some Sprite that will do this behavior
      */
     //% block
-    export function logic(asteroid: Sprite): void {
+    export function movement(asteroid: Sprite): void {
         asteroid.setVelocity(0, 75)
         asteroid.setPosition(randint(3, 150), 0)
     }

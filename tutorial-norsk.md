@@ -311,7 +311,7 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroideLogikk(Asteroide)
+	asteroideLogikk(asteroide)
 })
 ```
 
@@ -339,7 +339,7 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroideLogikk(Asteroide)
+	asteroideLogikk(asteroide)
 })
 ```
 

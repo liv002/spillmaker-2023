@@ -302,7 +302,7 @@ game.onUpdateInterval(500, function () {
 ```
 
 ## Asteroide: Steg 5
-Sjekk at navnet som står i rødt på ``||functions: call function||`` blokken er det samme
+Sjekk at navnet som står i rødt på ``||enemy: movement||`` blokken er det samme
 som hva asteroiden din heter.
 
 ```blocks

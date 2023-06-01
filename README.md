@@ -8,6 +8,11 @@
 * [tutorial md file](/tutorial-norsk.md)
 * [run tutorial](https://arcade.makecode.com/#tutorial:github:liv002/spillmaker-2023/tutorial-norsk)
 
+## English Version
+
+* [tutorial md file](/tutorial-english.md)
+* [run tutorial](https://arcade.makecode.com/#tutorial:github:liv002/spillmaker-2023/tutorial-english)
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.

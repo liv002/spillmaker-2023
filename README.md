@@ -3,6 +3,11 @@
 
 > Open this page at [https://liv002.github.io/spillmaker-2023/](https://liv002.github.io/spillmaker-2023/)
 
+## Norwegian Version
+
+* [tutorial md file](/tutorial-norsk.md)
+* [run tutorial](https://arcade.makecode.com/#tutorial:github:liv002/spillmaker-2023/tutorial-norsk)
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.

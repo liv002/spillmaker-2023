@@ -8,7 +8,7 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#c381bc icon="\f753"
+//% weight=100 color=#c381bc icon="\f6e2"
 namespace enemy {
     /**
      * TODO: describe your function here
@@ -18,5 +18,6 @@ namespace enemy {
     export function movement(asteroid: Sprite): void {
         asteroid.setVelocity(0, 75)
         asteroid.setPosition(randint(3, 150), 0)
+        asteroid.setFlag(SpriteFlag.AutoDestroy, true)
     }
 }

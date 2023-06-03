@@ -8,7 +8,7 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#c381bc icon="\f6e2"
+//% weight=100 color=#c381bc icon="\uf1ec"
 namespace enemy {
     /**
      * TODO: describe your function here

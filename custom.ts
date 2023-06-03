@@ -1,7 +1,7 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#c381bc icon="\uf753"
+//% weight=100 color=#c381bc icon="\ue076"
 namespace enemy {
     /**
      * @param asteroid some Sprite that will do this behavior

@@ -10,8 +10,6 @@ which we will now expand to a complete game!
 
 Firstly, change the effect from **confetti** to **star field**
 
-**NOTE: The blue block called ``||functions: function||`` is a neat little thing will help us later. For now you can ignore it**
-
 ```blocks
 effects.starField.startScreenEffect()
 ```
@@ -310,7 +308,7 @@ game.onUpdateInterval(500, function () {
 ## Asteroid: Step 5
 We want the asteroids to move. In the ``||variables:Variables||`` menu, find the little circular
 block with the same name as what you have called your asteroids. Drag this into the circular space
-
+on the movement block.
 
 ```blocks
 game.onUpdateInterval(500, function () {

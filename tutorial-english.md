@@ -1,11 +1,6 @@
 # Game Maker - Coding Challenge
 ```template
 effects.confetti.startScreenEffect()
-function asteroidLogic (asteroid: Sprite) {
-    asteroid.setVelocity(0, 75)
-    asteroid.setPosition(randint(3, 150), 0)
-    asteroid.setFlag(SpriteFlag.AutoDestroy, true)
-}
 ```
 ## Space ship: Step 1
 We want a nice, star-filled background for our game. On the right side of 
@@ -282,13 +277,11 @@ game.onUpdateInterval(500, function () {
 
 
 ## Asteroid: Step 4
-Lastly, we want the Asteroids to move towards us. This is where we get to use
-that blue block from the start. This block contains several things that we want 
-our Asteroid to do. 
+Lastly, we want the asteroids to move towards us and start at a random place along the top end 
+of the screen. We have created a block that does all of this for us. 
 
-In the menus, there is an ``||advance: Advanced||`` menu. Click on this. It should
-expand to show a new menu called ``||functions: Functions||``. Click on this and find
-the ``||functions: call asteroidLogic||`` and add it to our code
+In the ``||enemy:Enemy||`` menu, find the ``||enemy:movement||`` block, and add it to our
+``||game:on game update||`` block.
 
 ```blocks
 game.onUpdateInterval(500, function () {
@@ -310,13 +303,15 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroidLogic(asteroid)
+	enemy.movement()
 })
 ```
 
 ## Asteroid: Step 5
-Make sure the name on the ``||functions: call function||`` is the same as what you
-have called your asteroid.
+We want the asteroids to move. In the ``||variables:Variables||`` menu, find the little circular
+block with the same name as what you have called your asteroids. Drag this into the circular space
+
+
 ```blocks
 game.onUpdateInterval(500, function () {
     asteroid = sprites.create(img`
@@ -337,7 +332,7 @@ game.onUpdateInterval(500, function () {
         c c c c c c c c c c c c c c c c 
         . c c c c c c c c c c c c c c . 
         `, SpriteKind.Enemy)
-	asteroidLogic(asteroid)
+	enemy.movement(asteroid)
 })
 ```
 

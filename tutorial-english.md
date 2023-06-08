@@ -202,8 +202,8 @@ info.setLife(3)
 ```
 
 ## Asteroid: Step 1
-We want the game to create Asteroids that our ship can avoid or shoot down. 
-First we are going to add the event block that will spawn our Asteroids. In the 
+We want the game to create asteroids that our ship can avoid or shoot down. 
+First we are going to add the event block that will spawn our asteroids. In the 
 ``||game:Game||`` menu, find the ``||game:on game update every 500 ms||`` and it 
 to a free space on your screen. 
 
@@ -220,7 +220,7 @@ game.onUpdateInterval(500, function () {
 From the ``||sprites:Sprites||`` menu, find a new ``||variables:set mySprite to||``
 block and add it to the new ``||game:on game update every 500 ms||`` block.
 
-Give it a new name and draw what you want your Asteroid to look like.
+Give it a new name and draw what you want your asteroid to look like.
 
 ```blocks
 game.onUpdateInterval(500, function () {
@@ -246,8 +246,8 @@ game.onUpdateInterval(500, function () {
 ```
 
 ## Asteroid: Step 3
-The Asteroid is not a player, but an enemy we don't want to hit. At the end of the 
-``||variables:set Asteroid to||`` block, change the type from **player** to 
+The asteroid is not a player, but an enemy we don't want to hit. At the end of the 
+``||variables:set asteroid to||`` block, change the type from **player** to 
 **enemy**
 
 ```blocks
@@ -370,7 +370,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 ```
 
 ## Collision logic: Step 4
-To add some drama we want the screen to shake when hitting an Asteroid. From the
+To add some drama we want the screen to shake when hitting an asteroid. From the
 ``||scene:Scene||`` menu, find the ``||scene:camera shake||`` block and add it 
 to our event block.
 
@@ -383,7 +383,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 ```
 
 ## Collision logic: Step 5
-We're almost there! We just need to lose a life when hitting an Asteroid. In the 
+We're almost there! We just need to lose a life when hitting an asteroid. In the 
 ``||info:Info||`` menu, find the ``||info:change life by||``.
 
 We now have a basic game where you dodge asteroids! :)
@@ -439,7 +439,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## Laser: Step 3
 Click the empty square in the ``||variables:set projectile to||`` and draw what
-you want your laser to look like
+you want your laser to look like.
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -520,9 +520,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 
 ## Laser logic: Step 1
-We want our laser to shot down the Asteroids and give us points.
+We want our laser to shot down the asteroids and give us points.
 
-We need a new event block that waits for our laser to hit an Asteroid. In the 
+We need a new event block that waits for our laser to hit an asteroid. In the 
 ``||sprites:Sprites||`` menu, find the 
 ``||Sprites:on sprite of kind player overlaps with other sprite of kind of player||``.
 Add it to somewhere with free space on your screen.
@@ -533,7 +533,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherS
 ```
 
 ## Laser logic: Step 2
-The laser is of kind projectile and the Asteroids are of kind enemy. 
+The laser is of kind projectile and the asteroids are of kind enemy. 
 
 Click on where the block says **player**, change one of them to **projectile**
 and the other to **enemy**
@@ -544,7 +544,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
 ```
 
 ## Laser logic: Step 3
-We want the Asteroid that gets hit to disepear. In the ``||sprites:Sprites||`` 
+We want the asteroid that gets hit to disappear. In the ``||sprites:Sprites||`` 
 menu, find the ``||sprites:destroy mySprite||`` and add it to the overlap event block.
 
 Change **mySprite** to **otherSprite**. You can drag a circular **otherSprite**
@@ -557,7 +557,7 @@ sprites.destroy(otherSprite)
 ```
 
 ## Laser logic: FINAL STEP!
-We want to give ourself some points when hitting an Asteroid. In the 
+We want to give ourselves some points when hitting an asteroid. In the 
 ``||info:Info||`` menu, find the ``||info:change score by||`` block and 
 add it to the ``||Sprites:on sprite of kind player overlaps with other sprite of kind of player||``
 

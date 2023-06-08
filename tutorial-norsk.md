@@ -172,7 +172,7 @@ romSkip.bottom = 120
 
 ## Romskip: Steg 7
 Vi ønsker at romskipet vårt skal ha et visst antall liv. Gå til ``||info:Info||``
-menyen og legg ``||info:set lives to||`` blokken inn sammen med resten av koden vår.
+menyen og legg ``||info:set life to||`` blokken inn sammen med resten av koden vår.
 Hvor mange liv ønsker du at skipet vårt skal ha?
 
 ```blocks

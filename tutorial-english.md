@@ -356,7 +356,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 ```
 
 ## Collision logic: Step 3
-We want the asteroid that hits us to be destroyed, In the ``||sprites:Sprites||`` 
+We want the asteroid that hits us to be destroyed. In the ``||sprites:Sprites||`` 
 menu, find the ``||sprites:destroy mySprite||`` and add it to the overlap event block.
 
 Change **mySprite** to **otherSprite**. You can drag a circular **otherSprite**
@@ -408,7 +408,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 
 ## Laser: Step 2
-Now we add the laser as a projectile that from our space ship. In the 
+Now we add the laser as a projectile comming from our space ship. In the 
 ``||sprites:Sprites||`` menu, find ``||variables:set projectile to projectile from mySprite||``
 and add this to the ``||controller:on A button pressed||`` block.
 
@@ -520,7 +520,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 
 ## Laser logic: Step 1
-We want our laser to shot down the asteroids and give us points.
+We want our laser to shoot down the asteroids and give us points.
 
 We need a new event block that waits for our laser to hit an asteroid. In the 
 ``||sprites:Sprites||`` menu, find the 

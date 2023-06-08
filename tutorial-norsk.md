@@ -390,7 +390,7 @@ Nå har vi et enkelt spill hvor du prøver å unngå asteroidene! :)
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
     scene.cameraShake(4, 500)
-	info.changeScoreBy(1)
+	info.changeLifeBy(-1)
 
 })
 ```

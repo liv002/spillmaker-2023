@@ -533,10 +533,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherS
 ```
 
 ## Laser logic: Step 2
-The laser is of kind projectile and the asteroids are of kind enemy. 
+The laser is of kind "Projectile" and the asteroids are of kind "Enemy". 
 
-Click on where the block says **player**, change one of them to **projectile**
-and the other to **enemy**
+Click on where the block says **Player**, change one of them to **Projectile**
+and the other to **Enemy**
 
 ```blocks
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {

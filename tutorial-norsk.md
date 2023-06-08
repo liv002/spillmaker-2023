@@ -4,8 +4,8 @@ effects.confetti.startScreenEffect()
 ```
 
 ## Romskip: Steg 1
-Vi har lyst på en fin, stjernefyldt bakgrunn for spillet vårt. På
-høyre side av skjermen så er der en grønn ``||loops:on start||`` blokk
+Vi har lyst på en fin, stjernefylt bakgrunn for spillet vårt. På
+høyre side av skjermen så er det en grønn ``||loops:on start||`` blokk
 som har en ``||scene: start screen confetti effect||`` inne i seg. Dette 
 er begynnelsen på hva som skal bli spillet vårt! 
 
@@ -17,7 +17,7 @@ effects.starField.startScreenEffect()
 
 ## Romskip: Steg 2
 Vi må lage romskipet som vi skal styre. Gå til ``||sprites: Sprites||`` menyen og finn
-``||variables:set mySprite to||`` blokken. Legg denne til på bunnen av ``||loops:on start||``.
+``||variables:set mySprite to||`` blokken. Legg til denne på bunnen av ``||loops:on start||``.
 
 Du kan gi den et nytt navn, som f.eks. "romSkip" ved å klikke på "mySprite"
 
@@ -171,7 +171,7 @@ romSkip.bottom = 120
 ```
 
 ## Romskip: Steg 7
-Vi ønsker at romskipet vårt skal ha et vist antall liv. Gå til ``||info:Info||``
+Vi ønsker at romskipet vårt skal ha et visst antall liv. Gå til ``||info:Info||``
 menyen og legg ``||info:set lives to||`` blokken inn sammen med resten av koden vår.
 Hvor mange liv ønsker du at skipet vårt skal ha?
 
@@ -221,7 +221,7 @@ game.onUpdateInterval(500, function () {
 Fra ``||sprites:Sprites||`` menyen, finn en ny ``||variables:set mySprite to||``
 blokk og legg den inn i vår nye ``||game:on game update every 500 ms||`` blokk.
 
-Gi den et nytt navn og tegn hva du ønsker at astroiden dine skal se ut som.
+Gi den et nytt navn og tegn hva du ønsker at asteroidene dine skal se ut som.
 
 ```blocks
 game.onUpdateInterval(500, function () {
@@ -247,7 +247,7 @@ game.onUpdateInterval(500, function () {
 ```
 
 ## Asteroide: Steg 3
-Astroiden er ikke en spiller, men en fiende som vi skal prøve å unngå. På slutten av 
+Asteroiden er ikke en spiller, men en fiende som vi skal prøve å unngå. På slutten av 
 ``||variables:set Asteroide to||`` blokken, bytt typen fra **Player** til **Enemy**
 
 
@@ -354,7 +354,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 ```
 
 ## Kollisjonlogikk: Steg 3
-Vi har lyst til at asteroiden som treffer oss skal bli borte. i ``||sprites:Sprites||``
+Vi har lyst til at asteroiden som treffer oss skal bli borte. I ``||sprites:Sprites||``
 menyen, finn ``||sprites:destroy mySprite||`` blokken og legg den til i overlap 
 hendelse-blokken vår.
 
@@ -368,7 +368,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 ```
 
 ## Kollisjonlogikk: Steg 4
-Vi har lyst til at skjermen skal riste når vi treffer en asteroide, for å lage litt drama.
+Vi har lyst til at skjermen skal riste når vi treffer en asteroide, for å lage litt dramatikk.
 Fra ``||scene:Scene||`` menyen, finn ``||scene:camera shake||`` blokken og legg den inn i 
 hendelse-blokken vår.
 

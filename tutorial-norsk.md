@@ -492,7 +492,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ## Laser: Steg 5
 Vi ønsker at laseren skal bevege seg rett opp fra skipet. Bytt de to tallene på 
 slutten av ``||variables:set projectile to||`` blokken til **vx = 0** og 
-**vy = -150**
+**vy = -100**
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -513,7 +513,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . 2 . . . . . . . . 
         . . . . . . . 2 . . . . . . . . 
         . . . . . . . 2 . . . . . . . . 
-        `, romSkip, 0, -150)
+        `, romSkip, 0, -100)
 })
 ```
 

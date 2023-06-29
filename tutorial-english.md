@@ -494,7 +494,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ## Laser: Step 5
 We want the laser to move straight up from our ship. Change the two numbers at 
 the end of the ``||variables:set projectile to||`` block to **vx = 0** and 
-**vy = -150**
+**vy = -100**
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -515,7 +515,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . 2 . . . . . . . . 
         . . . . . . . 2 . . . . . . . . 
         . . . . . . . 2 . . . . . . . . 
-        `, spaceShip, 0, -150)
+        `, spaceShip, 0, -100)
 })
 ```
 

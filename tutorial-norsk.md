@@ -19,7 +19,8 @@ effects.starField.startScreenEffect()
 Vi må lage romskipet som vi skal styre. Gå til ``||sprites: Sprites||`` menyen og finn
 ``||variables:set mySprite to||`` blokken. Legg til denne på bunnen av ``||loops:on start||``.
 
-Du kan gi den et nytt navn, som f.eks. "romSkip" ved å klikke på "mySprite"
+Du kan gi den et nytt navn, som f.eks. "romSkip" ved å klikke på "mySprite" og så klikke på "rename
+variable"
 
 ```blocks
 effects.starField.startScreenEffect()

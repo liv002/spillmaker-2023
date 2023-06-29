@@ -19,7 +19,7 @@ effects.starField.startScreenEffect()
 We need to make a space ship that we will be playing as. Go to the ``||sprites: Sprites||``
 menu and find the ``||variables:set mySprite to||`` block, and add it do the bottom of
 ``||loops:on start||``. You can give it a new name, like "spaceShip" by clicking
-on "mySprite". 
+on "mySprite" and then clicking "rename variable". 
 
 ```blocks
 effects.starField.startScreenEffect()

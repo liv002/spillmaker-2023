@@ -4,7 +4,7 @@
 //% weight=100 color=#c381bc icon="\uf753"
 namespace enemy {
     /**
-     * @param asteroid some Sprite that will do this behavior
+     * @param asteroid some Sprite that will do this behavior, eg: asteroid
      */
     //% block
     export function movement(asteroid: Sprite): void {
